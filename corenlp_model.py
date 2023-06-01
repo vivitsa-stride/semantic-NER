@@ -2,7 +2,7 @@ from stanfordcorenlp import StanfordCoreNLP
 
 # Preset
 # absolute local path to stanford-corenlp-4.5.1
-path = "/home/vivitsa/Desktop/vivitsa-workspace/semantic NER/stanford-corenlp-4.5.1"
+path = "/home/vivitsa/Desktop/vivitsa-workspace/semantic-NER/stanford-corenlp-4.5.1"
 nlp = StanfordCoreNLP(path)
 
 
