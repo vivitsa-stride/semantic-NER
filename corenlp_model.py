@@ -171,7 +171,7 @@ def _create_list_for_entity(output,entity):
 
 def sort_by_entity(sentence):
    sorted_output = []
-   entities = ['PERSON', 'LOCATION', 'ORGANIZATION', 'MISC','MONEY', 'NUMBER', 'ORDINAL', 'PERCENT','DATE', 'TIME', 'DURATION', 'SET']
+   entities = ['PERSON', 'LOCATION', 'ORGANIZATION', 'DATE', 'TIME', 'DURATION']
    output = nlp.ner(sentence)
    nlp.close()
    for entity in entities:
