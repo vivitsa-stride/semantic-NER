@@ -21,7 +21,6 @@ but also immensely proud that we accomplished this while
 remaining completely committed to our values.
 (Stakeholders Relationship Committee)
 Member
-
 to reach approximately $178 billion in fiscal year
 2022 and the domestic sector is forecasted to reach
 approximately $49 billion in fiscal year 2022, growing at
@@ -171,7 +170,11 @@ def _create_list_for_entity(output,entity):
 
 def sort_by_entity(sentence):
    sorted_output = []
-   entities = ['PERSON', 'LOCATION', 'ORGANIZATION', 'DATE', 'TIME', 'DURATION']
+<<<<<<< HEAD
+   entities = ['PERSON', 'LOCATION', 'ORGANIZATION','DATE', 'TIME']
+=======
+   entities = ['PERSON', 'LOCATION', 'ORGANIZATION', 'MISC','MONEY', 'NUMBER', 'ORDINAL', 'PERCENT','DATE', 'TIME', 'DURATION', 'SET']
+>>>>>>> parent of 44909c6... removed unnecessary entities
    output = nlp.ner(sentence)
    nlp.close()
    for entity in entities:
@@ -179,4 +182,4 @@ def sort_by_entity(sentence):
       if x:
          sorted_output.append(x)
    return sorted_output
-print(sort_by_entity(test_sentence3))
+# print(sort_by_entity(test_sentence3))
